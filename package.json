@@ -16,5 +16,8 @@
   "homepage": "https://bitbucket.org/michaelripoll/guia-hoteles#readme",
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "open-iconic": "^1.1.1"
   }
 }
