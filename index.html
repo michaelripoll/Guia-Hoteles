@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <link href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
 
     <title>Guìa Hoteles</title>
@@ -192,7 +192,7 @@
                         <h5 class="card-title">Hotel San Pablo</h5>
                         <h6 class="card-subtitle text-muted">Brasil</h6>
                         <p class="card-text">Hotel ubicado en pleno centro.</p>
-                        <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+                        <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
                     </div>
                     <div>
                         <button class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones" data-content="Consulta las promociones vigentes"><span class="oi oi-plus footer-address-icon"></span>Reservar</button>
@@ -277,6 +277,27 @@
                 $('.carousel').carousel({
                     interval: 2000
                 });
+
+                $('#contacto').on('show.bs.modal', function(e){
+                    console.log('el modal se esta mostrando');
+
+                    $('#contactoBtn').removeClass('btn-outline-success');
+                    $('#contactoBtn').addClass('btn-primary');
+                    $('#contactoBtn').prop('disabled', true);
+                });
+
+                $('#contacto').on('shown.bs.modal', function(e){
+                    console.log('el modal se mostro');
+                });
+
+                $('#contacto').on('.bs.modal', function(e){
+                    console.log('el modal contacto se oculta');
+                });
+
+                $('#contacto').on('.bs.modal', function(e){
+                    console.log('el modal contacto se oculto');
+                });
+
             });
         </script>
     
