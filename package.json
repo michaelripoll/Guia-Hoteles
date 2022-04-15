@@ -39,7 +39,6 @@
     "htmlmin": "0.0.7",
     "jit-grunt": "^0.10.0",
     "lite-server": "^2.6.1",
-    "node-sass": "^5.0.0",
     "onchange": "^7.1.0",
     "rimraf": "^3.0.2",
     "time-grunt": "^2.0.0",
@@ -50,6 +49,7 @@
     "bootstrap": "^4.6.0",
     "concurrently": "^6.0.1",
     "jquery": "^3.5.1",
+    "node-sass": "^7.0.1",
     "open-iconic": "^1.1.1",
     "popper.js": "^1.16.1"
   }
